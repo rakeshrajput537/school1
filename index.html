@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Global Shine School</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css">
+  <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+	
+	<style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+	
+  	<script>
+	// Initialize and add the map
+	function initMap() {
+	  // The location of Uluru
+	  var uluru = {lat: 25.5759671, lng: 85.0636511};
+	  // The map, centered at Uluru
+	  var map = new google.maps.Map(
+		  document.getElementById('map'), {zoom: 14, center: uluru});
+	  // The marker, positioned at Uluru
+	  var marker = new google.maps.Marker({position: uluru, map: map});
+	}
+    </script>
+    <!--Load the API from the specified URL
+		* The async attribute allows the browser to render the page while the API loads
+		* The key parameter will contain your own API key (which is not needed for this tutorial)
+		* The callback parameter executes the initMap() function
+    -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRYoZRDeZJi1kLsnaeISKUyOgrNxYh4r4&callback=initMap"></script>
+</head>
+
+<body class="">
+  <nav class="navbar navbar-expand-md bg-primary navbar-dark bg-gradient">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <b>
+          <b>Global Shine School</b>
+        </b>
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#about"> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#mission">Mission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#vision">Vision</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#admission">Admission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#message">Message</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="py-5 text-center" style="background-image: url('Homepage1.jpeg');background-position:center center;background-size:cover;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="display-3 mb-4 bg-gradient text-light">Welcome to&nbsp;&nbsp;<br>Global Shine School</h1>
+          <p class="lead mb-5 bg-gradient">
+            <b>Let's Shine Together</b>
+            <br>Make your child a better learner and a better person</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 my-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            
+			<div class="col-md-6">
+				<center><img class="img-fluid d-block w-100 mb-3 rounded" src="global_shine_school.png" alt="Global Shine School"></center>
+			</div>
+			
+			<div class="col-md-6" style="
+    display: grid;
+    align-items: center;">
+				<center>
+					<div class="embed-responsive embed-responsive-16by9">
+					  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2xXz3FhQbX8?rel=0" allowfullscreen></iframe>
+					</div>
+				</center>
+			</div>
+			
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center text-primary display-4" id="about">About Us&nbsp;</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" id="abt">
+          <p class="lead text-center" id="about">
+            <b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Global Shine School was established in the year 2018 in the ever developing environment of Phulwarisharif, Patna. The school is recognized for its commitment towards excellence. This is an English medium school. &nbsp;We at the Global Shine School aim at preparing students to understand, contribute to, and succeed in a rapidly changing society, thus making the world a better and more just place. We pride ourselves on creating a unique, exciting environment that embraces all types of learners and promotes growth both academically and personally. We welcome both students and parents to a dynamic and supportive community. </b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary text-center display-4" id="mission">Our Mission <br> </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-center lead my-0">
+            <b>Believing that education is a powerful agent of social transformation, we will ensure that our students develop the skills that a sound education provides and inculcate in them a sense of compassion, empathy and resilience. We will strive relentlessly - to realize the vision - by making the best use of quality infrastructure, resources and experienced, talented and committed faculty.</b>
+            <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary text-center display-4" id="vision">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Our Vision &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <br> </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="lead text-center">
+            <b>The vision of Global Shine School is to provide comprehensive educational experiences that will empower our students to become lifelong learners and productive, informed, responsible citizens who are able to meet the challenges of a rapidly changing society. We also aim to bring forth the unique abilities of each child so that they can realise their true potential. We aspire to educate young minds and foster ethical, social and moral values through holistic learning to bloom into responsible global citizens.&nbsp;</b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="py-5 col-md-6">
+          <div class="row">
+            <div class="text-center col-4">
+              <i class="d-block mx-auto fa fa-5x fa-map-o"></i>
+            </div>
+            <div class="col-8">
+              <h5 class="mb-3 text-primary">
+                <b>An Educational Atmosphere</b>
+              </h5>
+              <p class="my-1 text-justify">At Global Shine School, we are committed to creating an educational atmosphere that makes coming here an exciting experience, each and every day. </p>
+            </div>
+          </div>
+        </div>
+        <div class="py-5 col-md-6">
+          <div class="row">
+            <div class="text-center col-4">
+              <i class="d-block mx-auto fa fa-5x fa-angle-double-up"></i>
+            </div>
+            <div class="col-8">
+              <h5 class="mb-3 text-primary">
+                <b>Empowering Students</b>
+              </h5>
+              <p class="my-1 text-justify">Our programs are intended to empower students to tackle challenges and take on experiences that may be new to them, while keeping learning fun and dynamic. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="py-5 col-md-6">
+          <div class="row">
+            <div class="text-center col-4">
+              <i class="d-block mx-auto fa fa-5x fa-file-o"></i>
+            </div>
+            <div class="col-8">
+              <h5 class="mb-3 text-primary">
+                <b>Well Designed Academics</b>
+              </h5>
+              <p class="my-1 text-justify">Built with blocks, yet modify easily. Customized academic structure for students to enable them for better development and learning</p>
+            </div>
+          </div>
+        </div>
+        <div class="py-5 col-md-6">
+          <div class="row">
+            <div class="text-center col-4">
+              <i class="d-block mx-auto fa fa-5x fa-code"></i>
+            </div>
+            <div class="col-8">
+              <h5 class="mb-3 text-primary">
+                <b>Supportive System</b>
+              </h5>
+              <p class="my-1 text-justify"> Keep exploring our website to learn more about our academics, staff and more. We are available for your support dedicatedly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center text-primary display-4" id="admission">Get Admission</h1>
+          <p class="lead" id="apply" contenteditable="true"><br><br>Global Shine School welcomes interested applicants for the session 2019-2020. Admissions start from <b>Playgroup to UKG,</b>&nbsp;subject to vacancies. Students are selected through the results of the interview that they have to undergo after applying. Admission is based on the performance of the candidate in the interview. The candidate is graded as per his/her performance and suitability for particular standard. Admission forms for all the classes will be available in the <b>second week of January </b>in the school office. The admission form can also be downloaded by clicking the <b>"apply"</b> button below.&nbsp; <br> </p>
+          <!-- Button trigger modal -->
+          <div class="text-center py-3">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" >
+              Apply
+            </button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Application Form</h5>
+
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form action="" method="POST">
+                    
+                    <div class="form-group">
+                      <label for="InputName">Student Detail</label>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <input type="text" class="form-control" id="InputName" name="InputName" placeholder="First Name" required="">
+                        </div>
+                        <div class="col-md-6">
+                          <input type="text" class="form-control" id="InputName" name="InputName" placeholder="Last Name">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="InputName">Father's Detail</label>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <input type="text" class="form-control" id="InputName" name="InputName" placeholder="Full Name" required="">
+                        </div>
+                        <div class="col-md-6">
+                          <input type="text" class="form-control" id="InputName" name="InputName" placeholder="Father's Occupation">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label for="InputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="InputEmail1" name="InputEmail" placeholder="Enter email" required="">
+                        </div> 
+                        <div class="col-md-6">
+                          <label>Mobile No.</label>
+                          <input type="number" class="form-control" name="InputMobile" placeholder="Enter your 10 digit mobile no." required="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <labels for="claaInput">Preference Class</label>
+                      <input class="form-control" type="text" name="classInput" placeholder="Enter your class" >
+                    </div>
+                    <div class="form-group">
+                      <label for="Textarea">Adderess</label>
+                      <textarea class="form-control" id="Textarea" name="Textarea" rows="2" placeholder="Enter Your address..."></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="Textarea">Message</label>
+                      <textarea class="form-control" id="Textarea" name="Textarea" rows="3" placeholder="Enter your message here..."></textarea>
+                    </div>
+                    <div class="modal-footar float-right">
+                    <button type="submit" class="btn btn-secondary"><i class="fa fa-paper-plane" aria-hidden="true"></i> &nbsp Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div >
+    <div class="container">
+      <div class="row"></div>
+    </div>
+  </div>
+  <div class="py-5 text-center bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary" id="message">
+            <b>Message from the Principal</b>
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 p-4">
+          <img class="img-fluid d-block rounded-circle mx-auto" src="Principal.png">
+          <p class="my-4 lead">&nbsp;As it is known to all that the future of the country belongs to its children. They are, therefore, to be prepared to take an active participation in the world they live in. There is a scope for continuous improvement. It is our aim to provide an environment that encourages growth, fosters creativity, generates honesty and sincerity where the students can get a strong inner and outer power to face the challenges in life. It is a dream in form of school which will fulfill the needs of the region in the field of education. <br>&nbsp;I hope for a positive co-operation and communication among the school, students and parents.&nbsp; <br>
+            <br> </p>
+          <p class="lead">
+            <b>- Ms. Naila Asif <br>&nbsp; Director &amp; Principal</b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-secondary">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center mb-5 text-primary" id="gallery">
+            <b>Our</b>&nbsp; <b>Gallery</b>&nbsp;</h1>
+        </div>
+      </div>
+      <div class="row gal">
+        <div class="p-1 col-md-2 col-6">
+          <a href="IMG-20180905-WA0041.jpg" target="_blank" data-lightbox="mygal" >
+            <img src="IMG-20180905-WA0041.jpg" class="img-fluid"> </a>
+        </div>
+        <div class="p-1 col-md-2 col-6">
+          <a href="IMG-20180905-WA0050.jpg" target="_blank" data-lightbox="mygal">
+            <img src="IMG-20180905-WA0050.jpg" class="img-fluid"> </a>
+        </div>
+        <div class="p-1 col-md-2 col-6" >
+          <a href="IMG-20180905-WA0043.jpg" target="_blank" data-lightbox="mygal">
+            <img src="IMG-20180905-WA0043.jpg" class="img-fluid"> </a>
+        </div>
+        <div class="p-1 col-md-2 col-6">
+          <a href="Homepage2.jpg" target="_blank" data-lightbox="mygal">
+            <img src="Homepage2.jpg" class="img-fluid"> </a>
+        </div>
+        <div class="p-1 col-md-2 col-6">
+          <a href="IMG-20180905-WA0052.jpg" target="_blank" data-lightbox="mygal">
+            <img src="IMG-20180905-WA0052.jpg" class="img-fluid"> </a>
+        </div>
+        <div class="p-1 col-md-2 col-6">
+          <a href="IMG-20180905-WA0040.jpg" target="_blank" data-lightbox="mygal">
+            <img src="IMG-20180905-WA0040.jpg" class="img-fluid"> </a>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center">Call us : +91 - 8521186572 / 7979746689 <br>
+            <br>
+            <br>&nbsp;Reach us : Near Phulwarisharif High School, &nbsp;Khagaul Road,&nbsp; <br>Phulwarisharif, Patna - 801505&nbsp;</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-primary text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+			<!--The div element for the map -->
+			<div id="map"></div>
+		</div>
+        
+		<div class="col-md-6">
+          <h1 id="contact">For any query</h1>
+          <p>We would love to hear from you</p>
+          <form action="send_mail.php" method="POST">
+            <div class="form-group">
+              <label for="InputName">Your name</label>
+              <input type="text" class="form-control" id="InputName" name="InputName" placeholder="Your name"> </div>
+            <div class="form-group">
+              <label for="InputEmail1">Email address</label>
+              <input type="email" class="form-control" id="InputEmail1" name="InputEmail" placeholder="Enter email"> </div>
+			  <div class="form-group">
+            <label for="InputEmail1">Phone No.</label>
+              <input type="number" class="form-control" id="InputEmail1" name="InputPhone" placeholder="Enter Phone"> </div>
+            <div class="form-group">
+              <label for="Textarea">Write here</label>
+              <textarea class="form-control" id="Textarea" name="Textarea" rows="3" placeholder="Type here"></textarea>
+            </div>
+            <button type="submit" class="btn btn-secondary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-dark text-primary" style="">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <p class="lead">Designed and Developed by Onibus Technologies Private Limited</p>
+          <form class="form-inline">
+            <div class="form-group"><label></label></div>
+          </form>
+        </div>
+        <div class="col-4 col-md-1 align-self-center">
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="fa fa-fw fa-facebook fa-3x text-white" id="https://onibus.in"></i>
+          </a>
+        </div>
+        <div class="col-4 col-md-1 align-self-center">
+          <a href="https://twitter.com" target="_blank">
+            <i class="fa fa-fw fa-twitter fa-3x text-white"></i>
+          </a>
+        </div>
+        <div class="col-4 col-md-1 align-self-center">
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="fa fa-fw text-white fa-3x fa-play"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mt-3 text-center">
+          <p>© Copyright 2018 OniBus - All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" style=""></script>
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+
+.gal img {
+	filter: grayscale(100%);
+	transition: 1s;
+}
+.gal img:hover{
+	filter: grayscale(0);
+	transform: scale(1.1);
+}
