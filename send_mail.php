@@ -52,5 +52,6 @@
 		$headers .= 'From: Message<info@globalshineschool.com>' . "\r\n";
 
 		mail($to,$subject,$message,$headers);
+		header('location:index.html')
 		/*******/
 ?>

@@ -18,11 +18,14 @@
         height: 400px;  /* The height is 400 pixels */
         width: 100%;  /* The width is the width of the web page */
        }
+       html {
+        scroll-behavior: smooth;
+          }
     </style>
 	
   	<script>
 	// Initialize and add the map
-	function initMap() {
+	/*function initMap() {
 	  // The location of Uluru
 	  var uluru = {lat: 25.5759671, lng: 85.0636511};
 	  // The map, centered at Uluru
@@ -30,7 +33,7 @@
 		  document.getElementById('map'), {zoom: 14, center: uluru});
 	  // The marker, positioned at Uluru
 	  var marker = new google.maps.Marker({position: uluru, map: map});
-	}
+	}*/
     </script>
     <!--Load the API from the specified URL
 		* The async attribute allows the browser to render the page while the API loads
@@ -38,6 +41,9 @@
 		* The callback parameter executes the initMap() function
     -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRYoZRDeZJi1kLsnaeISKUyOgrNxYh4r4&callback=initMap"></script>
+
+
+
 </head>
 
 <body class="">
@@ -54,10 +60,10 @@
       <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link active" href="#" class="smooth-goto">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#about"> About</a>
+            <a class="nav-link active" href="#about" class="smooth-goto"> About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="#mission">Mission</a>
@@ -100,7 +106,7 @@
           <div class="row">
             
 			<div class="col-md-6">
-				<center><img class="img-fluid d-block w-100 mb-3 rounded" src="images/global_shine_school.png" alt="Global Shine School"></center>
+				<center><img class="img-fluid d-block w-100 mb-3 rounded" src="global_shine_school.png" alt="Global Shine School"></center>
 			</div>
 			
 			<div class="col-md-6" style="
@@ -263,16 +269,16 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <form action="" method="POST">
+                  <form action="mail.php" method="POST">
                     
                     <div class="form-group">
                       <label for="InputName">Student Detail</label>
                       <div class="row">
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="InputName" name="InputName" placeholder="First Name" required="">
+                          <input type="text" class="form-control" id="fInputName" name="fInputName" placeholder="First Name" required="">
                         </div>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="InputName" name="InputName" placeholder="Last Name">
+                          <input type="text" class="form-control" id="sInputName" name="lInputName" placeholder="Last Name">
                         </div>
                       </div>
                     </div>
@@ -280,10 +286,10 @@
                       <label for="InputName">Father's Detail</label>
                       <div class="row">
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="InputName" name="InputName" placeholder="Full Name" required="">
+                          <input type="text" class="form-control" id="fatherInputName" name="fatherInputName" placeholder="Full Name" required="">
                         </div>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="InputName" name="InputName" placeholder="Father's Occupation">
+                          <input type="text" class="form-control" id="foInputName" name="foInputName" placeholder="Father's Occupation">
                         </div>
                       </div>
                     </div>
@@ -292,25 +298,25 @@
                       <div class="row">
                         <div class="col-md-6">
                           <label for="InputEmail1">Email address</label>
-                          <input type="email" class="form-control" id="InputEmail1" name="InputEmail" placeholder="Enter email" required="">
+                          <input type="email" class="form-control" id="eInputEmail1" name="eInputEmail" placeholder="Enter email" required="">
                         </div> 
                         <div class="col-md-6">
                           <label>Mobile No.</label>
-                          <input type="number" class="form-control" name="InputMobile" placeholder="Enter your 10 digit mobile no." required="">
+                          <input type="number" class="form-control" name="mInputMobile" id="mInputMobile" placeholder="Enter your 10 digit mobile no." required="">
                         </div>
                       </div>
                     </div>
                     <div class="form-group">
-                      <labels for="claaInput">Preference Class</label>
-                      <input class="form-control" type="text" name="classInput" placeholder="Enter your class" >
+                      <labels for="classInput">Preference Class</label>
+                      <input class="form-control" type="text" name="classInput" id="classInput" placeholder="Enter your class" >
                     </div>
                     <div class="form-group">
                       <label for="Textarea">Adderess</label>
-                      <textarea class="form-control" id="Textarea" name="Textarea" rows="2" placeholder="Enter Your address..."></textarea>
+                      <textarea class="form-control" id="address" name="address" rows="2" placeholder="Enter Your address..."></textarea>
                     </div>
                     <div class="form-group">
                       <label for="Textarea">Message</label>
-                      <textarea class="form-control" id="Textarea" name="Textarea" rows="3" placeholder="Enter your message here..."></textarea>
+                      <textarea class="form-control" id="messageInput" name="messageInput" rows="3" placeholder="Enter your message here..."></textarea>
                     </div>
                     <div class="modal-footar float-right">
                     <button type="submit" class="btn btn-secondary"><i class="fa fa-paper-plane" aria-hidden="true"></i> &nbsp Submit</button>
@@ -340,7 +346,7 @@
       </div>
       <div class="row">
         <div class="col-md-12 p-4">
-          <img class="img-fluid d-block rounded-circle mx-auto" src="images/Principal.png">
+          <img class="img-fluid d-block rounded-circle mx-auto" src="Principal.png">
           <p class="my-4 lead">&nbsp;As it is known to all that the future of the country belongs to its children. They are, therefore, to be prepared to take an active participation in the world they live in. There is a scope for continuous improvement. It is our aim to provide an environment that encourages growth, fosters creativity, generates honesty and sincerity where the students can get a strong inner and outer power to face the challenges in life. It is a dream in form of school which will fulfill the needs of the region in the field of education. <br>&nbsp;I hope for a positive co-operation and communication among the school, students and parents.&nbsp; <br>
             <br> </p>
           <p class="lead">
@@ -361,27 +367,27 @@
       <div class="row gal">
         <div class="p-1 col-md-2 col-6">
           <a href="IMG-20180905-WA0041.jpg" target="_blank" data-lightbox="mygal" >
-            <img src="images/IMG-20180905-WA0041.jpg" class="img-fluid"> </a>
+            <img src="IMG-20180905-WA0041.jpg" class="img-fluid"> </a>
         </div>
         <div class="p-1 col-md-2 col-6">
           <a href="IMG-20180905-WA0050.jpg" target="_blank" data-lightbox="mygal">
-            <img src="images/IMG-20180905-WA0050.jpg" class="img-fluid"> </a>
+            <img src="IMG-20180905-WA0050.jpg" class="img-fluid"> </a>
         </div>
         <div class="p-1 col-md-2 col-6" >
           <a href="IMG-20180905-WA0043.jpg" target="_blank" data-lightbox="mygal">
-            <img src="images/IMG-20180905-WA0043.jpg" class="img-fluid"> </a>
+            <img src="IMG-20180905-WA0043.jpg" class="img-fluid"> </a>
         </div>
         <div class="p-1 col-md-2 col-6">
           <a href="Homepage2.jpg" target="_blank" data-lightbox="mygal">
-            <img src="images/Homepage2.jpg" class="img-fluid"> </a>
+            <img src="Homepage2.jpg" class="img-fluid"> </a>
         </div>
         <div class="p-1 col-md-2 col-6">
           <a href="IMG-20180905-WA0052.jpg" target="_blank" data-lightbox="mygal">
-            <img src="images/IMG-20180905-WA0052.jpg" class="img-fluid"> </a>
+            <img src="IMG-20180905-WA0052.jpg" class="img-fluid"> </a>
         </div>
         <div class="p-1 col-md-2 col-6">
-          <a href="images/IMG-20180905-WA0040.jpg" target="_blank" data-lightbox="mygal">
-            <img src="images/IMG-20180905-WA0040.jpg" class="img-fluid"> </a>
+          <a href="IMG-20180905-WA0040.jpg" target="_blank" data-lightbox="mygal">
+            <img src="IMG-20180905-WA0040.jpg" class="img-fluid"> </a>
       </div>
     </div>
   </div>
@@ -399,12 +405,15 @@
   <div class="py-5 bg-primary text-white">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-7">
 			<!--The div element for the map -->
-			<div id="map"></div>
+      
+			<div id="map" >
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.870587938721!2d85.06146241492537!3d25.575971922505314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2a9d130aa305f%3A0x7ecd354d75a319b6!2sGLobal+Shine+School!5e0!3m2!1sen!2sin!4v1548365561966" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>   
+      </div>
 		</div>
         
-		<div class="col-md-6">
+		<div class="col-offset-2 col-md-5">
           <h1 id="contact">For any query</h1>
           <p>We would love to hear from you</p>
           <form action="send_mail.php" method="POST">
